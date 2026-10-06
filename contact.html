@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Contact Me</title>
 </head>
 
 <body>
@@ -14,73 +15,69 @@
     <h1>Contact Me</h1>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about.html">About</a></p>
+        <p><a href="projects.html">Projects</a></p>
+        <p><a href="contact.html">Contact</a></p>
     </nav>
 
-    <h2>Get In Touch</h2>
+    <main>
 
-    <p>
-        Have a question, project idea, or just want to say hello?
-        Fill in the form below and send me a message.
-    </p>
+        <section>
+            <h2>Get In Touch</h2>
 
-    <form action="#" method="post">
+            <p>
+                Use the form below to send me a message.
+            </p>
 
-        <label for="name">Full Name:</label>
-        <input
-            type="text"
-            id="name"
-            name="name"
-            required
-        >
+            <form action="#" method="post">
 
-        <label for="email">Email:</label>
-        <input
-            type="email"
-            id="email"
-            name="email"
-            required
-        >
+                <p>
+                    <label for="fullname">Full Name</label><br>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
 
-        <label for="phone">Phone:</label>
-        <input
-            type="tel"
-            id="phone"
-            name="phone"
-        >
+                <p>
+                    <label for="email">Email Address</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
 
-        <label for="subject">Subject:</label>
-        <select id="subject" name="subject" required>
-            <option value="">Select a subject</option>
-            <option value="general">General Inquiry</option>
-            <option value="project">Project Discussion</option>
-            <option value="feedback">Feedback</option>
-        </select>
+                <p>
+                    <label for="phone">Phone Number (Optional)</label><br>
+                    <input type="tel" id="phone" name="phone">
+                </p>
 
-        <label for="message">Message:</label>
-        <textarea
-            id="message"
-            name="message"
-            minlength="50"
-            required
-        ></textarea>
+                <p>
+                    <label for="subject">Subject</label><br>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="programming">Programming</option>
+                        <option value="design">Graphic Design</option>
+                        <option value="general">General Inquiry</option>
+                    </select>
+                </p>
 
-        <label>
-            <input
-                type="checkbox"
-                name="newsletter"
-            >
-            Subscribe to my newsletter
-        </label>
+                <p>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" rows="6" minlength="50" required></textarea>
+                </p>
 
-        <button type="submit">Send Message</button>
+                <p>
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        Subscribe to my newsletter
+                    </label>
+                </p>
 
-    </form>
+                <p>
+                    <button type="submit">Send Message</button>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
 
 </body>
-
 </html>
-
