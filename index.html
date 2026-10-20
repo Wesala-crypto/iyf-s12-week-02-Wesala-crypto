@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,49 +8,98 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-    <title>Welcome to my first website</title>
+    <title>My Projects | Christopher</title>
 </head>
-
 <body>
 
-    <h1>Create.Innovate.Inspire</h1>
+    <header>
+        <h1>My Projects</h1>
 
-    <nav>
-        <p><a href="index.html">Home</a></p>
-        <p><a href="about.html">About</a></p>
-        <p><a href="projects.html">Projects</a></p>
-        <p><a href="contact.html">Contact</a></p>
-    </nav>
+        <nav aria-label="Main navigation">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="about.html">About</a></p>
+            <p><a href="projects.html" aria-current="page">Projects</a></p>
+            <p><a href="contact.html">Contact</a></p>
+        </nav>
+    </header>
 
-    <p>
-        Hello! My name is Christopher. I am a university student interested in
-        technology, programming, and learning new skills.
-    </p>
+    <main>
+        <section>
+            <h2>Projects I Have Worked On</h2>
 
-    <h2>My Hobbies and Interests</h2>
+            <p>
+                Here are some projects I have worked on while learning
+                programming, web development, and graphic design.
+            </p>
+        </section>
 
-    <h3>Programming</h3>
-    <p>
-        I enjoy programming and learning how to create websites and applications.
-    </p>
+        <section class="projects" aria-label="My projects">
 
-    <h4>Graphic Design</h4>
-    <p>
-        I enjoy creating designs and exploring different ways to communicate ideas visually.
-    </p>
+            <article class="project">
+                <h2>Personal Portfolio</h2>
 
-    <h5>My Favorite Website</h5>
-    <p>
-        Visit my favorite website:
-        <a href="https://www.youtube.com">YouTube</a>
-    </p>
+                <p>
+                    A multi-page website built with HTML and CSS to introduce
+                    myself, showcase my skills, and help people contact me.
+                </p>
 
-    <h6>Contact Me</h6>
-    <p>
-        Contact me:
-        <a href="mailto:wesalachris@gmail.com">Email Me</a>
-    </p>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+            </article>
+
+            <article class="project">
+                <h2>Chicken Home</h2>
+
+                <p>
+                    A poultry business website concept showcasing poultry
+                    products and services. I created the website as a
+                    practical project.
+                </p>
+
+                <span class="tag">Web Design</span>
+
+                <p>
+                    <a href="https://drive.google.com/drive/folders/1yDU-b8Wj8dvJOr53Er8Vtl83GUj3W2Cx"
+                       target="_blank" rel="noopener noreferrer">
+                        View Chicken Home Project
+                    </a>
+                </p>
+            </article>
+
+            <article class="project">
+                <h2>Graphic Design</h2>
+
+                <p>
+                    Posters, logos, and other visual materials created while
+                    developing my graphic design skills, including a logo
+                    for my Chicken Home business concept.
+                </p>
+
+                <span class="tag">Graphic Design</span>
+
+                <p>
+                    <a href="https://drive.google.com/file/d/17DYTvbczfKuXiLN-H_p2rpMtPMvuShQ2/view?usp=sharing"
+                       target="_blank" rel="noopener noreferrer">
+                        View Chicken Home Logo
+                    </a>
+                </p>
+            </article>
+
+        </section>
+
+        <section class="info-card">
+            <h2>More Projects Coming Soon</h2>
+
+            <p>
+                I am continuously learning and building new projects.
+                More work will be added as my skills grow.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Christopher. Built with HTML and CSS.</p>
+    </footer>
 
 </body>
 </html>
-
